@@ -1,0 +1,119 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General styling for the body */
+body {
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 20px;
+}
+
+/* Container section for players */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Each player section */
+.player {
+    background-color: #e0e7ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+/* Hover effect for players */
+.player:hover {
+    background-color: #d4d9ff;
+}
+
+/* Player name styling */
+.name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Score display */
+.count {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}
+
+/* Button container */
+.player div {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for minus button */
+.minus {
+    background-color: #f44336;
+}
+
+/* Hover effect for minus button */
+.minus:hover {
+    background-color: #e53935;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .player {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .player div {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .count {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
