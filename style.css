@@ -100,6 +100,30 @@ button:hover {
     background-color: #e53935;
 }
 
+
+/* Success Message Styling */
+.success {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+/* Hidden state for the message */
+.hidden {
+    right: -100%;
+    pointer-events: none;
+}
+
+
 /* Media query for small screens */
 @media (max-width: 600px) {
     .player {
